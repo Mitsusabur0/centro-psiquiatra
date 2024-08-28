@@ -467,10 +467,11 @@ body {
 footer {
     background-color: var(--background-white);
     background-color: var(--main-color);
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     color: lightgray;
+    color: var(--main-color);
     /* text-align: center; */
-    padding: 1rem 10%;
+    padding: 2rem 10%;
     margin-bottom: 0px;
     width: 100%;
     display: flex;
@@ -489,12 +490,12 @@ footer {
 
 .div-logo-footer h1 {
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 
 .div-logo-footer p {
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 
@@ -548,4 +549,37 @@ footer {
 .port-andres img {
   width: 300px;
   border-radius: 10px;
+}
+
+
+
+/* CONTACTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+.andres-container {
+  display: flex;
+  padding: 50px 15vw;
+}
+
+.andres-card {
+  display: flex;
+  gap: 50px;
+}
+
+.andres-text p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+
+
+.andres-text .contacto-link {
+  color: var(--main-color); 
+  /* color: grey; */
+  font-weight: 700; 
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.contacto-link:hover {
+  color: black;
 }
