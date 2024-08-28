@@ -177,7 +177,7 @@ body {
 
 .title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* Portada de imagen y texto en el centro */
@@ -338,6 +338,19 @@ body {
     color: whitesmoke;
     padding: 30px 50px;
     font-size: 1.2rem;
+}
+
+
+.linkedin-text-link {
+  color: #0A66C2;
+  height: 1.2rem;
+  margin: auto;
+}
+
+.linkedin-img {
+  width: fit-content;
+  margin-top: 10px;
+  text-align: center;
 }
 
 
