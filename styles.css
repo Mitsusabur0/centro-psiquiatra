@@ -512,7 +512,9 @@ footer {
 }
 
 .port-img {
-  width: 1100px;
+  /* width: 800px; */
+width: 50vw;
+  height: auto;
 }
 
 .port-right-container {
@@ -570,6 +572,11 @@ footer {
 .andres-text p {
   text-align: justify;
   font-size: 1rem;
+}
+
+.contacto-icon {
+  width: 85px;
+  margin-bottom: 10px;
 }
 
 
