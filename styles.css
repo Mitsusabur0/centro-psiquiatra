@@ -582,6 +582,10 @@ width: 50vw;
   gap: 50px;
 }
 
+.andres-card-img {
+  border-radius: 10px;
+}
+
 .andres-text p {
   text-align: justify;
   font-size: 1rem;
