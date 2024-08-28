@@ -5,8 +5,8 @@
 }
 
 :root  {
-    --main-color: #ad762f;
     --main-color: darkcyan;
+    /* --main-color: darkgreen; */
     --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
     --text-color: #252525;
@@ -73,6 +73,24 @@ body {
     border-radius: 5px;
 
   }
+
+  .div-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-family: "Oswald";
+    /* font-family: "Merriweather"; */
+    /* font-family: "Montserrat"; */
+  }
+
+  .div-logo h1 {
+    font-size: 2rem;
+  }
+
+  .div-logo p {
+    font-size: 1.5rem;
+    color: var(--main-color)
+  }
   
   .nav-menu ul {
     display: flex;
@@ -82,9 +100,9 @@ body {
     gap: 2rem;
   }
   
-  .nav-menu ul li {
-    /* margin-left: 1rem; */
-  }
+  /* .nav-menu ul li {
+    margin-left: 1rem;
+  } */
   
   .nav-menu ul li a {
     text-decoration: none;
@@ -157,7 +175,7 @@ body {
 
 .title {
   text-align: center;
-  margin-top: 1rem
+  margin-top: 50px;
 }
 
 /* Portada de imagen y texto en el centro */
@@ -355,7 +373,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    margin: 50px;
     gap: 100px;
     flex-wrap: wrap;
 }
@@ -449,6 +467,7 @@ body {
 footer {
     background-color: var(--background-white);
     background-color: var(--main-color);
+    background-color: lightgrey;
     color: lightgray;
     /* text-align: center; */
     padding: 1rem 10%;
@@ -460,5 +479,73 @@ footer {
     box-shadow: 0 -2px 2px lightgrey;
 }
 
+.div-logo-footer {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
 
 
+.div-logo-footer h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+.div-logo-footer p {
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+
+/* CODIGO NUEVO PARA HEERLEIN DE PORTADA AAAAAAAAAAAAAAAAAA */
+
+
+.port {
+  display: flex;
+  /* padding: 0 18vw; */
+  margin-bottom: 100px;
+}
+
+.port-img {
+  width: 1100px;
+}
+
+.port-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.port-text {
+  /* width: 45vw; */
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  font-size: 1rem;
+  font-family: "Oswald";
+  gap: 16px;
+  /* font-family: "Merriweather"; */
+  /* font-family: "Montserrat"; */
+
+}
+.port-text h1 {
+  text-align: center;
+  /* font-weight: 400; */
+  color: var(--main-color)
+}
+.port-text p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: "Oswald";
+  font-family: "Merriweather";
+  /* font-family: "Montserrat"; */
+}
+
+
+.port-andres img {
+  width: 300px;
+  border-radius: 10px;
+}
