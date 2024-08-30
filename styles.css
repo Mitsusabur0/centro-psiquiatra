@@ -576,7 +576,7 @@ width: 50vw;
 
 .andres-container {
   display: flex;
-  padding: 50px 10vw;
+  padding: 50px 15vw;
 }
 
 .andres-card {
@@ -586,6 +586,7 @@ width: 50vw;
 
 .andres-card-img {
   border-radius: 10px;
+  width: 20vw;
 }
 
 .andres-text p {
