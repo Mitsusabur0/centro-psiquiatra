@@ -421,6 +421,8 @@ body {
     width: inherit;
     padding: 0 1px;
     border-radius: inherit;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .main-color {
@@ -609,3 +611,4 @@ width: 50vw;
 .contacto-link:hover {
   color: black;
 }
+
