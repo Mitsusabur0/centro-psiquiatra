@@ -6,7 +6,7 @@
 
 :root  {
     --main-color: darkcyan;
-    /* --main-color: darkgreen; */
+    /* --main-color: rgb(82, 129, 82); */
     --secondary-color-dark: #303030;
     --background-white: #f5f5f5;
     --text-color: #252525;
@@ -209,9 +209,10 @@ body {
     font-size: 4.5vw;
     font-weight: 500;
     letter-spacing: 2px;
-    /* background-color: rgba(0, 0, 0, 0.329); */
+    background-color: rgba(0, 0, 0, 0.329);
     text-shadow: 1px 1px 4px black;
-    /* font-family: "Playfair Display"; */
+    font-family: "Playfair Display";
+    /* font-family: "Oswald"; */
 }
 
 .texto-portada-secundario {
@@ -580,6 +581,7 @@ width: 50vw;
   padding: 50px 15vw;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 .andres-card {
@@ -696,7 +698,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #2c3e50;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid var(--main-color);
     padding-bottom: 0.5rem;
 }
 
