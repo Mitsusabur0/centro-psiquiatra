@@ -613,3 +613,9 @@ width: 50vw;
   color: black;
 }
 
+.map {
+  /* border-radius: 10px; */
+  box-shadow: 0 0 4px grey;
+  margin-bottom: 40px;
+  max-width: 90vw;
+}
