@@ -676,67 +676,105 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0;
 }
 
+/* Bio section */
+
+
 .bio-section {
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-  color: #333;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .bio-section section {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .bio-section h3 {
-  color: #2c3e50;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--main-color);
-  padding-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
 }
 
 .bio-section p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bio-section ul {
-  list-style-type: none;
-  padding-left: 1.5rem;
+    list-style-type: none;
+    padding-left: 1.5rem;
 }
 
 .bio-section li {
-  margin-bottom: 0.5rem;
-  position: relative;
+    margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .bio-section li::before {
-  content: "•";
-  color: var(--main-color);
-  font-weight: bold;
-  position: absolute;
-  left: -1rem;
+    content: "•";
+    color: var(--main-color);
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
 }
 
 .cta-section {
-  /* background-color: #f8f9fa; */
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: center;
+    /* background-color: #f8f9fa; */
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .cta-button {
-  display: inline-block;
-  background-color: var(--main-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #2980b9;
+    background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .bio-section {
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .bio-section ul {
+        padding-left: 0;
+    }
+
+    .bio-section li {
+        padding-left: 0;
+    }
+
+    .bio-section li::before {
+        content: none;
+    }
+
+    .bio-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .cta-section {
+        padding: 1rem;
+    }
+
+    .cta-button {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 1rem auto 0;
+    }
 }
