@@ -92,6 +92,7 @@ a:hover {
 
 .div-logo h1 {
   font-size: 2rem;
+  margin: 0;
 }
 
 .div-logo p {
@@ -361,6 +362,8 @@ footer {
     display: flex;
   }
 
+  
+
   .nav-menu li {
     margin: 1rem 0;
   }
@@ -452,6 +455,17 @@ footer {
   color: var(--main-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.map-container {
+  text-align: center;
+}
+
+.map {
+  box-shadow: 0 0 4px grey;
+  margin: 40px 0;
+  max-width: 90vw;
+
 }
 
 /* Styles for equipo.html */
@@ -567,7 +581,7 @@ footer {
   }
 
   .contacto-card {
-    width: 100%;
+    width: 90vw;
   }
 
   .bio-section {
