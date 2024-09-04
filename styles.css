@@ -112,7 +112,7 @@ a:hover {
 .nav-menu ul li a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: .5px;
 }
 
@@ -191,13 +191,17 @@ a:hover {
   color: var(--background-white);
   width: 80%;
   max-width: 800px;
+  background-color: #00000054;
+  padding: 2rem;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  color: var(--background-white)
+  color: var(--background-white);
+  letter-spacing: 8px;
+  font-family: "Oswald";
 }
 
 .hero-content p {
@@ -338,10 +342,13 @@ footer {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  border: 1px solid whitesmoke;
+  margin-top: 2rem;
 }
 
 .cta-button:hover {
   background-color: var(--secondary-color);
+  color: white;
 }
 
 /* Media Queries */
@@ -408,16 +415,17 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.363);
   padding: 1rem 2rem;
   border-radius: 5px;
 }
 
 .hero-title h1 {
   color: var(--background-white);
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 8px;
 }
 
 .contacto-container {
@@ -541,8 +549,9 @@ footer {
 }
 
 .linkedin-text-link img {
-  width: 20px;
+  width: 80px;
   margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .linkedin-text-link:hover {
