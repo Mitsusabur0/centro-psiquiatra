@@ -1,28 +1,17 @@
-/* Updated and Organized CSS for Centro Heerlein */
-
-/* ======================================
-   Table of Contents:
-   1. Variables
-   2. Reset and Base Styles
-   3. Typography
-   4. Layout and Grid
-   5. Navigation
-   6. Header
-   7. Main Content Sections
-   8. Footer
-   9. Utility Classes
-   10. Media Queries
-   ====================================== */
-
-/* 1. Variables */
+/* Variables */
 :root {
-  --main-color: darkcyan;
-  --secondary-color-dark: #303030;
-  --background-white: #f5f5f5;
-  --text-color: #252525;
+  --main-color: #008080;
+  --secondary-color: #303030;
+  --accent-color: #ececec;
+  --background-white: #ffffff;
+  --background-white: whitesmoke;
+  --text-color: #333333;
+  --font-heading: 'Playfair Display', serif;
+  /* --font-heading: 'Oswald', serif; */
+  --font-body: 'Open Sans', sans-serif;
 }
 
-/* 2. Reset and Base Styles */
+/* Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,32 +19,48 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-white);
 }
 
-/* 3. Typography */
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--main-color);
+  transition: color 0.3s ease;
 }
 
-/* 4. Layout and Grid */
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Layout and Grid */
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* 5. Navigation */
+
+
+/* Navigation Styles from old.css */
+/* Top Navigation */
+.top-nav {
+  background-color: var(--main-color);
+  height: 25px;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,12 +70,48 @@ a {
   border-bottom: 1px solid lightgrey;
   position: relative;
   z-index: 1000;
+  font-family: "Oswald";
+}
+
+.logo-container {
+  width: 300px;
+  margin-right: 40px;
+}
+
+.img-logo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.div-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: "Oswald";
+}
+
+.div-logo h1 {
+  font-size: 2rem;
+}
+
+.div-logo p {
+  font-size: 1.5rem;
+  color: var(--main-color);
 }
 
 .nav-menu ul {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   gap: 2rem;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: .5px;
 }
 
 .nav-menu ul li a:hover {
@@ -92,19 +133,43 @@ a {
   background-color: var(--text-color);
 }
 
-/* 6. Header */
-.top-nav {
-  background-color: var(--main-color);
-  height: 25px;
-}
+@media screen and (max-width: 1040px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 7rem;
+    flex-direction: column;
+    background-color: var(--background-white);
+    width: 100%;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
 
-/* 7. Main Content Sections */
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin: 1rem 0;
+    height: 5vh;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1001;
+  }
+}
 
 /* Hero Section */
 .hero {
   position: relative;
-  width: 100%;
-  height: 60vh; /* Increased height for better visual impact */
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -112,7 +177,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  filter: brightness(0.7);
 }
 
 .hero-content {
@@ -121,8 +186,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  z-index: 2;
+  color: var(--background-white);
   width: 80%;
   max-width: 800px;
 }
@@ -131,6 +195,7 @@ a {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: var(--background-white)
 }
 
 .hero-content p {
@@ -139,29 +204,25 @@ a {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.hero-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  z-index: 2;
+/* Sections */
+.section-index {
+  padding: 4rem 0;
+  text-align: justify;
 }
 
-.hero-title h1 {
-  color: white;
-  font-size: 3rem;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+
+/* About Section */
+.about {
+  background-color: var(--accent-color);
 }
 
 /* Services Section */
-.services {
-  padding: 4rem 0;
-}
-
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -169,7 +230,7 @@ a {
 }
 
 .service-card {
-  background-color: #fff;
+  background-color: var(--background-white);
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -181,16 +242,24 @@ a {
   transform: translateY(-5px);
 }
 
+.service-card h3 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
 /* Team Section */
 .team {
-  padding: 4rem 0;
-  background-color: #f9f9f9;
+  background-color: var(--accent-color);
 }
 
 .team-member {
   display: flex;
   align-items: center;
   gap: 2rem;
+  background-color: var(--background-white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .team-photo {
@@ -200,13 +269,154 @@ a {
   border-radius: 50%;
 }
 
+.team-info h3 {
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
 
+/* CTA Section */
+.cta {
+  background-color: var(--main-color);
+  color: var(--background-white);
+  text-align: center;
+}
 
-/* Contact Section */
-.contacto-container {
+.cta h2 {
+  color: var(--background-white);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--background-white);
+  padding: 3rem 0 1rem;
+  font-family: "Oswald";
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: var(--background-white);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+
+
+/* Utility Classes */
+.text-link {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: var(--background-white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--background-white);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-color);
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+/* Styles for contacto.html */
+.img-portada {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.hero-title h1 {
+  color: var(--background-white);
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.contacto-container {
   padding: 4rem 0;
 }
 
@@ -220,10 +430,17 @@ a {
 
 .contacto-card {
   width: 300px;
+  background-color: var(--background-white);
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contacto-card:hover {
+  transform: translateY(-5px);
 }
 
 .contacto-icon {
@@ -231,22 +448,36 @@ a {
   margin-bottom: 1rem;
 }
 
-/* Bio section */
+.contacto-card h2 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
+/* Styles for equipo.html */
 .andres-container {
-  display: flex;
-  padding: 4rem 15vw;
-  align-items: center;
-  justify-content: center;
+  padding: 4rem 0;
 }
 
 .andres-card {
   display: flex;
-  gap: 3rem;
   flex-direction: column;
-  max-width: 800px;
-  justify-content: center;
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.andres-card h1 {
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.andres-img {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
 .andres-card-img {
@@ -255,37 +486,27 @@ a {
   height: auto;
 }
 
-.andres-img {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-}
-
 .expertise-section {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  padding: 1rem 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .expertise-section h2 {
-  color: #333;
+  color: var(--main-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid var(--main-color);
-  padding-bottom: 0.5rem;
+  text-align: left;
 }
 
 .expertise-section ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .expertise-section li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
 }
@@ -300,28 +521,20 @@ a {
 }
 
 .bio-section {
-  font-family: 'Merriweather', serif;
-  line-height: 1.6;
-  color: #333;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .bio-section section {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .bio-section h3 {
-  color: #2c3e50;
+  color: var(--main-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--main-color);
   padding-bottom: 0.5rem;
-}
-
-.bio-section p {
-  margin-bottom: 1rem;
 }
 
 .bio-section ul {
@@ -342,125 +555,29 @@ a {
   left: -1rem;
 }
 
-/* 8. Footer */
-footer {
-  background-color: var(--secondary-color-dark);
-  color: white;
-  padding: 3rem 0 1rem;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-
-.footer-bottom {
-  margin-top: 2rem;
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid #555;
-}
-
-/* 9. Utility Classes */
-.text-link {
-  color: var(--main-color);
-  font-weight: 700;
-}
-
-.text-link:hover {
-  text-decoration: underline;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: var(--main-color);
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #006666;
-}
-
-/* 10. Media Queries */
-@media screen and (max-width: 1040px) {
-  .navbar {
-      padding: 1rem;
-  }
-
-  .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: var(--background-white);
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-      left: 0;
-  }
-
-  .nav-menu ul {
-      flex-direction: column;
-  }
-
-  .hamburger {
-      display: block;
-  }
-
-  .hero h1 {
-      font-size: 2rem;
-  }
-
-  .team-member {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .footer-content {
-      flex-direction: column;
-  }
-}
-
-
-@media screen and (max-width: 1040px) {
-  /* ... (previous media queries remain the same) ... */
-
-  .andres-container {
-      padding: 2rem;
-  }
-
-  .andres-card {
-      flex-direction: column;
-      align-items: center;
-  }
-
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
   .andres-img {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .expertise-section {
-      margin-top: 2rem;
+    width: 100%;
+  }
+
+  .contacto-card {
+    width: 100%;
+  }
+
+  .bio-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nosotros {
+    margin: 0 20vw;
   }
 }
