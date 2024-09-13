@@ -365,6 +365,7 @@ footer {
     align-items: flex-start;
   } */
 
+
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -957,6 +958,11 @@ body.modal-open {
   .team-grid {
       grid-template-columns: 1fr;
   }
+
+  .section-index {
+    padding: 3rem 0;
+  }
+
 }
 
 
