@@ -33,8 +33,6 @@
             <nav class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <!-- <li><a href="./templates/nuestro_estudio.html">Quiénes Somos</a></li> -->
-                    <!-- <li><a href="./templates/areas.html">Áreas de Atención</a></li> -->
                     <li><a href="./templates/andres.html">Dr. Andrés Heerlein</a></li>
                     <li><a href="./templates/equipo.html">Nuestros Profesionales</a></li>
                     <li><a href="./templates/contacto.html">Contacto</a></li>
@@ -44,15 +42,21 @@
     </header>
 
     <main role="main">
+        
         <section class="hero">
-            <!-- <img src="./images/oficina.jpeg" alt="Centro Heerlein Oficina"> -->
-            <img src="./images/jpg_sin_filtro/4.jpg" alt="Centro Heerlein Oficina">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/portadas/index-m.jpg">
+                <source media="(min-width: 601px)" srcset="./images/portadas/index-med.jpg">
+                <img src="./images/portadas/index-med.jpg" alt="Header Image" class="img-portada">
+            </picture>
             <div class="hero-content">
                 <h1>Centro <span style="color: var(--main-color)">Heerlein</span></h1>
                 <p>Cuida tu salud con atención psiquiátrica y psicológica personalizada.</p>
                 <a href="./templates/contacto.html" class="cta-button">Solicitar Consulta</a>
             </div>
         </section>
+
+
 
         <section class="about section-index">
             <div class="container nosotros">

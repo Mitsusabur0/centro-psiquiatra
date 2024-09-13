@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-white);
+  min-height: 100vh;
 }
 
 /* Typography */
@@ -591,6 +592,7 @@ footer {
   margin-bottom: 2rem;
 }
 
+
 .andres-card-img {
   border-radius: 10px;
   max-width: 300px;
@@ -739,6 +741,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
+  margin-bottom: 10rem;
 }
 
 .team-card {

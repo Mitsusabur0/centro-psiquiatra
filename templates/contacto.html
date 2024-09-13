@@ -33,8 +33,6 @@
             <nav class="nav-menu" id="nav-menu">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <!-- <li><a href="./templates/nuestro_estudio.html">Quiénes Somos</a></li> -->
-                    <!-- <li><a href="./templates/areas.html">Áreas de Atención</a></li> -->
                     <li><a href="./andres.html">Dr. Andrés Heerlein</a></li>
                     <li><a href="./equipo.html">Nuestros Profesionales</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
@@ -51,8 +49,11 @@
 
     <main role="main">
         <section class="hero">
-            <!-- <img src="../images/entrada.png" alt="Centro Heerlein Entrance" class="img-portada"> -->
-            <img src="../images/jpg_sin_filtro/11.jpg" alt="Centro Heerlein Entrance" class="img-portada">
+            <picture>
+                <source media="(max-width: 600px)" srcset="../images/portadas/contacto-m.jpg">
+                <source media="(min-width: 601px)" srcset="../images/portadas/index-med.jpg">
+                <img src="../images/portadas/index-med.jpg" alt="Header Image" class="img-portada">
+            </picture>
             <div class="hero-title">
                 <h1>Contacto</h1>
             </div>

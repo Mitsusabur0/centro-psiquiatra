@@ -50,28 +50,31 @@ const cards = document.querySelectorAll(".team-card");
 const closeBtn = document.querySelector(".close");
 
 const teamData = {
-  jose: {
+  andres: {
     name: "Andrés Heerlein Lobenstein",
     position: "Psiquiatra",
     email: "ajheerlein@gmail.com",
+    modalidad: "Presencial",
     phone: "",
     linkedin: "https://www.linkedin.com/in/andr%C3%A9s-heerlein-lobenstein-46257a7a/",
     description: "Psiquiatra",
     image: "../images/andres-portrait.jpeg"
   },
-  beltran: {
+  estrella: {
     name: "Estrella Muñoz",
     position: "Psicóloga",
     email: "mail",
+    modalidad: "Remota",
     phone: "phone",
     linkedin: "",
     description: "Psicóloga",
     image: "../images/estrella.jpg"
   },
-  bianca: {
+  daniela: {
     name: "Daniela",
     position: "Psicóloga",
     email: "mail",
+    modalidad: "Presencial",
     phone: "",
     linkedin: "",
     description: "Psicóloga",
@@ -89,6 +92,7 @@ cards.forEach(card => {
     document.getElementById("modal-name").textContent = data.name;
     document.getElementById("modal-position").textContent = data.position;
     document.getElementById("modal-email").textContent = data.email;
+    document.getElementById("modal-attention-type").textContent = data.modalidad;
     document.getElementById("modal-phone").textContent = data.phone;
     document.getElementById("modal-linkedin").href = data.linkedin;
     document.getElementById("modal-description").textContent = data.description;
