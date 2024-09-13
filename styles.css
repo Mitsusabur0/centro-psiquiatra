@@ -399,6 +399,9 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 
   .footer-content {
     flex-direction: column;
@@ -581,16 +584,11 @@ footer {
   gap: 2rem;
 }
 
-.andres-card h1 {
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 2.5rem;
-}
-
 .tab-title {
   font-size: 2.5rem;
-
+  margin: 0;
+  padding: 0;
+  color: var(--main-color)
 }
 
 .andres-img {
@@ -676,6 +674,11 @@ footer {
   left: -1rem;
 }
 
+.bio-section a {
+  color: #0077b5;
+  font-weight: 600;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .andres-img {
@@ -733,8 +736,8 @@ footer {
   border-bottom: 1px solid var(--main-color);
   border-bottom: 1px solid #e0e0e0;
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  /* padding-bottom: 2rem; */
   /* font-weight: 500; */
   font-family: "Playfair display";
 }

@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // JS to show lawyers new window on click
 const modal = document.getElementById("team-modal");
-const cards = document.querySelectorAll(".team-card");
+const cards = document.querySelectorAll(".team-member");
 const closeBtn = document.querySelector(".close");
 
 const teamData = {
@@ -63,11 +63,12 @@ const teamData = {
   estrella: {
     name: "Estrella Muñoz",
     position: "Psicóloga",
-    email: "mail",
+    email: "esmuve@gmail.com",
     modalidad: "Remota",
-    phone: "phone",
-    linkedin: "",
-    description: "Psicóloga",
+    phone: "+56 9 9439 9128",
+    linkedin: "https://www.linkedin.com/in/estrella-munoz-a20ab944/",
+    description: 
+    "<p>Estrella Muñoz Venegas es una Psicóloga Clínica Acreditada, especialista en Psicoterapia de Adultos, Pareja y Familia. Tiene un Magíster en Psicología Clínica y amplia experiencia en psicoterapia, docencia e investigación.</p> <br><strong>Formación y Especialización</strong>: <ul> <li>Magíster en Psicología Clínica</li> <li>Psicóloga Clínica Acreditada Especialista en Psicoterapia</li> <li>Post-Título en Terapia Familiar, Individual y de Pareja</li> <li>Certificada en Coaching Cognitivo Estratégico</li></ul> <br> <strong>Áreas de Experiencia:</strong> <ul><li>Psicoterapia de Adultos</li> <li>Terapia de Pareja y Familia</li> <li>Investigación en Salud Mental</li> <li>Docencia Académica en Psicología</li></ul>",
     image: "../images/estrella.jpg"
   },
   daniela: {
@@ -95,7 +96,7 @@ cards.forEach(card => {
     document.getElementById("modal-attention-type").textContent = data.modalidad;
     document.getElementById("modal-phone").textContent = data.phone;
     document.getElementById("modal-linkedin").href = data.linkedin;
-    document.getElementById("modal-description").textContent = data.description;
+    document.getElementById("modal-description").innerHTML = data.description;
     
     modal.style.display = "block";
     void modal.offsetWidth;
