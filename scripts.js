@@ -62,21 +62,20 @@ const teamData = {
   },
   estrella: {
     name: "Estrella Muñoz",
-    position: "Psicóloga",
+    position: "Psicóloga clínica",
     email: "esmuve@gmail.com",
     modalidad: "Remota",
     phone: "+56 9 9439 9128",
     linkedin: "https://www.linkedin.com/in/estrella-munoz-a20ab944/",
-    description: 
-    "<p>Estrella Muñoz Venegas es una Psicóloga Clínica Acreditada, especialista en Psicoterapia de Adultos, Pareja y Familia. Tiene un Magíster en Psicología Clínica y amplia experiencia en psicoterapia, docencia e investigación.</p> <br><strong>Formación y Especialización</strong>: <ul> <li>Magíster en Psicología Clínica</li> <li>Psicóloga Clínica Acreditada Especialista en Psicoterapia</li> <li>Post-Título en Terapia Familiar, Individual y de Pareja</li> <li>Certificada en Coaching Cognitivo Estratégico</li></ul> <br> <strong>Áreas de Experiencia:</strong> <ul><li>Psicoterapia de Adultos</li> <li>Terapia de Pareja y Familia</li> <li>Investigación en Salud Mental</li> <li>Docencia Académica en Psicología</li></ul>",
+    description: "<p>Estrella Muñoz Venegas es una Psicóloga Clínica Acreditada, especialista en Psicoterapia de Adultos, Pareja y Familia. Tiene un Magíster en Psicología Clínica y amplia experiencia en psicoterapia, docencia e investigación.</p> <br><strong>Formación y Especialización</strong>: <ul> <li>Magíster en Psicología Clínica</li> <li>Psicóloga Clínica Acreditada Especialista en Psicoterapia</li> <li>Post-Título en Terapia Familiar, Individual y de Pareja</li> <li>Certificada en Coaching Cognitivo Estratégico</li></ul> <br> <strong>Áreas de Experiencia:</strong> <ul><li>Psicoterapia de Adultos</li> <li>Terapia de Pareja y Familia</li> <li>Investigación en Salud Mental</li> <li>Docencia Académica en Psicología</li></ul>",
     image: "../images/estrella.jpg"
   },
   daniela: {
     name: "Daniela",
-    position: "Psicóloga",
-    email: "mail",
+    position: "Psicóloga clínica",
+    email: "",
     modalidad: "Presencial",
-    phone: "",
+    phone: "+56 9 9499 4689",
     linkedin: "",
     description: "Psicóloga",
     image: "../images/daniela.jpg",
