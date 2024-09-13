@@ -71,106 +71,84 @@
 
 
 
+    <section class="team-container"></section>
+      <div class="team-intro">
+        <h2>Conoce a Nuestros Abogados</h2>
+        <p>En Abarca Zañartu, contamos con un equipo de abogados altamente calificados y comprometidos con la excelencia
+          en el servicio legal.</p>
+      </div>
 
-    <main>
-        <!-- <div class="portada-container">
-            <img src="../images/equipo.JPG" alt="portada" class="img-portada">
-            <h1 class="texto-portada texto-portada-secundario">Nuestro equipo</h1>
+      <div class="team-grid">
+        <div class="team-card" data-member="jose">
+          <img src="../images/andres." alt="José Antonio Abarca" class="team-img">
+          <h3>José Antonio Abarca</h3>
+          <p>Socio Fundador</p>
         </div>
-         -->
-         <div role="main">
-            <h1 class="title">Conoce a nuestros profesionales</h1>
-            
-            <div class="equipo-container">
-              <div class="equipo-card">
-                <div class="equipo-card-img-container">
-                  <img src="../images/8.jpeg" alt="Dr. Andrés Heerlein Lobenstein" class="equipo-card-img">
-                </div>
-                <div class="equipo-card-content">
-                  <h3>Dr. Andrés Heerlein</h3>
-                  <p>Psiquiatra</p>
-                  <a href="https://www.linkedin.com/in/andr%C3%A9s-heerlein-lobenstein-46257a7a/" class="linkedin-text-link" target="_blank">
-                    <img src="../images/icons/linked-in-logo.webp" alt="LinkedIn">
-                  </a>
-                  <p style="color: var(--main-color)">ajheerlein@gmail.com</p>
-                </div>
-              </div>
-          
-              <div class="equipo-card">
-                <div class="equipo-card-img-container">
-                  <img src="../images/psic1.jpg" alt="Nombre Psicóloga" class="equipo-card-img">
-                </div>
-                <div class="equipo-card-content">
-                  <h3>Estrella Muñoz</h3>
-                  <p>Psicóloga</p>
-                  <a href="#" class="linkedin-text-link" target="_blank">
-                    <img src="../images/icons/linked-in-logo.webp" alt="LinkedIn">
-                  </a>
-                  <p style="color: var(--main-color)">mail@gmail.com</p>
-                </div>
-              </div>
-          
-              <div class="equipo-card">
-                <div class="equipo-card-img-container">
-                  <img src="../images/psic2.jpg" alt="Nombre Psicóloga 2" class="equipo-card-img">
-                </div>
-                <div class="equipo-card-content">
-                  <h3>Daniela Apellido</h3>
-                  <p>Psicóloga</p>
-                  <a href="#" class="linkedin-text-link" target="_blank">
-                    <img src="../images/icons/linked-in-logo.webp" alt="LinkedIn">
-                  </a>
-                  <p style="color: var(--main-color)">mail2@gmail.com</p>
-                </div>
-              </div>
+        <div class="team-card" data-member="beltran">
+          <img src="../images/bel.jpg" alt="Beltrán Zañartu Urbina" class="team-img">
+          <h3>Beltrán Zañartu Urbina</h3>
+          <p>Socio</p>
+        </div>
+        <div class="team-card" data-member="bianca">
+          <img src="../images/bianca.jpeg" alt="Bianca Barrueto Zamora" class="team-img">
+          <h3>Bianca Barrueto Zamora</h3>
+          <p>Asociada</p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="team-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <img id="modal-image" src="" alt="" class="modal-img">
+            <div class="modal-header-text">
+              <h2 id="modal-name"></h2>
+              <p id="modal-position"></p>
             </div>
           </div>
+          <div class="modal-body">
+            <p id="modal-description"></p>
+            <div class="modal-contact-info">
+              <p><strong>Teléfono:</strong> <span id="modal-phone"></span></p>
+              <p><strong>Email:</strong> <span id="modal-email"></span></p>
+              <p><a id="modal-linkedin" target="_blank">LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- ASESÓRATE CON NOSOTROS -->
-        <!-- <div class="asesorate-container">
-            <h1>Asesórate con nosotros</h1>
-            <p>Diligencia y confidencialidad.</p>
-            <a href="../templates/contacto.html"><div class="btn-contacto">Contacto</div></a>
-         </div> -->
-
-    </main>
+    </section>
 
 
 
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Centro Heerlein</h3>
-                    <p>Salud Mental</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p>Guardia Vieja 255, of. 1108, Providencia</p>
-                    <p>Teléfono y whatsapp: +569 8500 0639</p>
-                    <p>Email: ajheerlein@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h3>Centro Heerlein</h3>
+                  <p>Salud Mental</p>
+              </div>
+              <div class="footer-section">
+                  <h3>Enlaces</h3>
+                  <ul>
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="./equipo.html">Nuestros Profesionales</a></li>
+                      <li><a href="./andres.html">Dr. Andrés Heerlein</a></li>
+                      <li><a href="./contacto.html">Contacto</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h3>Contacto</h3>
+                  <p>Guardia Vieja 255, of. 1108, Providencia</p>
+                  <p>Teléfono: +569 8500 0639</p>
+                  <p>Email: ajheerlein@gmail.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>    
 </body>
 </html>
 

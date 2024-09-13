@@ -49,9 +49,14 @@ a:hover {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.container a {
+  font-weight: 700;
+
 }
 
 
@@ -299,14 +304,15 @@ section h2 {
 footer {
   background-color: var(--secondary-color);
   color: var(--background-white);
-  padding: 3rem 0 1rem;
+  padding: 3rem 1rem;
   font-family: "Oswald";
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -318,12 +324,6 @@ footer {
 .footer-section h3 {
   color: var(--main-color);
   margin-bottom: 1rem;
-}
-
-.social-icons a {
-  color: var(--background-white);
-  font-size: 1.5rem;
-  margin-right: 1rem;
 }
 
 
@@ -357,10 +357,10 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .navbar {
+  /* .navbar {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .nav-menu {
     display: none;
@@ -441,7 +441,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .contacto-card {
@@ -472,11 +472,12 @@ footer {
 
 .map-container {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .map {
   box-shadow: 0 0 4px grey;
-  margin: 40px 0;
+  /* margin: 40px 0; */
   max-width: 90vw;
 
 }
@@ -693,6 +694,20 @@ footer {
 
 @media screen and (min-width: 800px) {
   .nosotros {
-    margin: 0 20vw;
+    margin-bottom: 1rem;
   }
 }
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section a {
+  color: var(--accent-color)
+}
+.footer-section a:hover {
+  color: var(--main-color)
+}
+
+
+/* Código para equipo.html NUEVO */
