@@ -84,8 +84,9 @@ a:hover {
 }
 
 .logo-container {
-  width: 300px;
+  width: 200px;
   margin-right: 40px;
+  display: flex;
 }
 
 .img-logo {
@@ -709,6 +710,11 @@ footer {
   .nosotros {
     margin-bottom: 1rem;
   }
+
+  .team-container h2 {
+    margin-bottom: 100px;
+  }
+
 }
 
 .footer-section ul {
@@ -793,7 +799,6 @@ footer {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease;
-
 }
 
 .modal.show {
@@ -805,7 +810,7 @@ footer {
 
 .modal-content {
   background-color: #fefefe;
-  padding: 40px;
+  padding: 40px 80px;
   border: 1px solid #888;
   width: 90%;
   max-width: 800px;
@@ -902,7 +907,7 @@ body.modal-open {
 
 @media screen and (max-width: 600px) {
   .modal-content {
-      padding: 20px;
+      padding: 20px 40px;
       width: 90%;
       max-height: 80vh;
   }
@@ -1007,6 +1012,7 @@ body.modal-open {
 @media screen and (max-width: 768px) {
   .tab-title {
       font-size: 2rem;
+      margin: 0 2rem
   }
 
   .team-card {
