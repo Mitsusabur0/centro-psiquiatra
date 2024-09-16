@@ -736,6 +736,7 @@ footer {
   transition: opacity 0.3s ease, transform 0.3s ease;
   overflow-y: auto;
   margin: 0px;
+  max-height: 80vh
 }
 
 .modal.show .modal-content {
