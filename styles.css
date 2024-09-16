@@ -884,6 +884,10 @@ body.modal-open {
   text-align: justify;
 }
 
+#modal-description ul {
+  text-align: start;
+}
+
 .modal-contact-info {
   padding-top: 20px;
 
