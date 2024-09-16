@@ -481,6 +481,7 @@ footer {
 .map {
   box-shadow: 0 0 4px grey;
   /* margin: 40px 0; */
+  width: 960px;
   max-width: 90vw;
 
 }
