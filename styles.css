@@ -55,10 +55,7 @@ a:hover {
 
 .container a {
   font-weight: 700;
-
 }
-
-
 
 /* Navigation Styles from old.css */
 /* Top Navigation */
@@ -625,6 +622,10 @@ footer {
 
   .team-container h2 {
     margin-bottom: 100px;
+  }
+
+  .title-strong {
+    color: var(--main-color)
   }
 
 }
