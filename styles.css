@@ -361,10 +361,10 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  /* .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  } */
+  
+  .section-index h2 {
+    font-size: 2rem;
+  }
 
 
   .nav-menu {
