@@ -67,7 +67,7 @@ const teamData = {
     modalidad: "Remota",
     phone: "+56 9 9439 9128",
     linkedin: "https://www.linkedin.com/in/estrella-munoz-a20ab944/",
-    description: "<p>Estrella Muñoz Venegas es una psicóloga clínica, especializada en psicoterapia de adultos, pareja y familia. Tiene un magíster en Psicología Clínica y amplia experiencia en psicoterapia, docencia e investigación.</p> <br><strong>Formación y Especialización</strong>: <ul> <li>Magíster en Psicología clínica</li> <li>Post-título en terapia familiar, individual y de pareja</li> <li>Certificada en Coaching cognitivo estratégico</li></ul> <br> <strong>Áreas de Experiencia:</strong> <ul><li>Psicoterapia de adultos</li> <li>Terapia de pareja y familia</li> <li>Investigación en salud mental</li> <li>Docencia académica en psicología</li></ul>",
+    description: "<p>Psicóloga clínica, especializada en psicoterapia de adultos, pareja y familia. Tiene un magíster en Psicología Clínica y amplia experiencia en psicoterapia, docencia e investigación.</p> <br><strong>Formación y Especialización</strong>: <ul> <li>Magíster en Psicología clínica</li> <li>Post-título en terapia familiar, individual y de pareja</li> <li>Certificada en Coaching cognitivo estratégico</li></ul> <br> <strong>Áreas de Experiencia:</strong> <ul><li>Psicoterapia de adultos</li> <li>Terapia de pareja y familia</li> <li>Investigación en salud mental</li> <li>Docencia académica en psicología</li></ul>",
     image: "../images/team/estrella.jpg"
   },
   daniela: {
