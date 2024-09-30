@@ -71,13 +71,13 @@ const teamData = {
     image: "../images/team/estrella.jpg"
   },
   daniela: {
-    name: "Daniela",
+    name: "Daniela Portilla Pérez",
     position: "Psicóloga clínica",
     email: "",
     modalidad: "Presencial",
     phone: "+56 9 9499 4689",
-    linkedin: "",
-    description: "Psicóloga",
+    linkedin: "./contacto.html",
+    description: "Psicóloga clínica con 20 años de experiencia en servicio de oncología y cuidados paliativos. Magister en psicología clínica con mención en psicoanálisis. Académica facultad de medicina UDD en manejo de intervención en crisis y duelo. Psicóloga clínica del servicio de oncología y cuidados paliativos en Clinica Alemana: <ul><li>Coordinadora de reuniones del servicio de psicología e integrante de Unidad de Enlace.</li><li>Gestora de proyectos de humanización en cuidados paliativos y duelo</li><li>Programas de acompañamiento compasivo para familias y equipo de salud en procesos de fin de vida</li><li>Taller grupal Programa de Apoyo para el duelo</li></ul>",    
     image: "../images/team/daniela.jpg",
   }
 };
